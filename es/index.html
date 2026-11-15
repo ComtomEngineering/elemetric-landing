@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Elemetric | Comparador de Tarifas Eléctricas en España</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/main.css"/>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png"/>
+	<meta name="generator" content="Hugo 0.169.0">
+</head>
+<body class="bg-[#f4f4f4] text-on-surface font-body text-[14px] leading-[20px] antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<header class="fixed top-0 left-0 right-0 w-full z-50 bg-[#161616] text-[#ffffff] border-b border-[#393939]"><div class="w-full px-4 lg:px-8"><div class="h-14 flex items-center justify-between gap-4"><div class="flex items-center gap-6 shrink-0"><a class="flex items-center gap-2 group" data-path="precios-hoy-historico" href="/es/">								<div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+	<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+		<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+	</svg>
+</div><span class="font-headline text-[16px] font-semibold text-white tracking-tight">Elemetric</span></a>
+
+
+
+<div class="hidden 2xl:flex items-center gap-2 px-2.5 py-1 bg-[#262626] border border-[#393939] font-mono text-[12px]"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary-fixed-dim"></span></span><span class="text-[#c6c6c6]">Pool PVPC:</span><span class="font-semibold text-white">0,165 €/kWh</span><span class="opacity-30">|</span><span class="text-[#c6c6c6]">OMIE:</span><span class="font-semibold text-white">116,16 €/MWh</span></div>
+
+</div><nav class="hidden xl:flex items-center gap-1"><a class="px-3 py-4 text-[13px] text-white font-semibold bg-[#262626] border-b-2 border-primary" data-path="precios-hoy-historico" href="#">Evolucion de Precios</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="calculadora-de-factura" href="https://compare.elemetric.comtom.engineering">Calculadora de Factura</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="tarifas-libres-vs-pvpc" href="#analisis-comparativo">Desglose Regulatorio</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="guia-consejos-ahorro" href="#consejos-ahorro">Consejos de Ahorro</a></nav><div class="flex items-center gap-3 shrink-0"><div class="flex items-center border border-[#393939] text-[11px] font-mono"><button class="px-2 py-1 bg-[#393939] text-white font-semibold" type="button">ES</button><a class="px-2 py-1 text-[#8d8d8d] hover:text-white transition-colors" href="/en/">EN</a></div></div></div></div></header>
+<main class="w-full pt-14 bg-[#f4f4f4] min-h-[calc(100vh-56px)]"><div class="flex flex-col w-full">
+
+
+<section class="w-full px-4 lg:px-8 pt-6 pb-4 bg-white border-b border-[#e0e0e0]">
+<div class="max-w-[1440px] mx-auto flex flex-col gap-4">
+
+<div class="flex flex-wrap items-center justify-between gap-3">
+<nav class="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">MERCADO ELÉCTRICO</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">TENDENCIAS 90 DÍAS</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">PENINSULAR 2.0TD</span>
+</nav>
+
+
+
+<div class="flex items-center gap-2 bg-[#f4f4f4] border border-[#e0e0e0] px-3 py-1 text-[12px]">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-mono text-[11px] text-on-surface">Datos OMIE / REE: <strong class="text-primary font-semibold">13/11 22:36</strong></span>
+<span class="border-l border-[#e0e0e0] pl-2 font-mono text-[10px] text-on-surface-variant">BOE 2024/2025</span>
+</div>
+
+
+</div>
+
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 pt-1">
+<div class="max-w-4xl">
+<h1 class="font-headline text-[32px] md:text-[38px] leading-[42px] md:leading-[46px] text-on-surface font-semibold tracking-tight">Evolución y Tendencia del Precio de la Electricidad en España <span class="text-primary font-bold">(Últimos 90 Días)</span></h1>
+<p class="text-[15px] leading-[22px] text-on-surface-variant mt-2">Seguimiento diario del pool mayorista OMIE y PVPC regulado (Península, Canarias y Baleares) frente a las mejores ofertas del mercado libre para la tarifa de acceso doméstico <span class="font-semibold text-on-surface bg-[#e0e0e0] px-1 py-0.5">2.0TD</span>.</p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 border border-[#8d8d8d] bg-white hover:bg-[#f4f4f4] text-on-surface text-[13px] font-medium transition-colors" href="#analisis-comparativo">
+<span class="material-symbols-outlined text-[16px]">query_stats</span>
+Metodología &amp; Fuentes
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#0353e9] text-white text-[13px] font-medium transition-colors" href="https://compare.elemetric.comtom.engineering">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+Simular Factura
+</a>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="w-full px-4 lg:px-8 py-5">
+
+
+
+
+
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+
+<div class="bg-white border border-[#e0e0e0] p-4 flex flex-col justify-between border-t-2 border-t-primary">
+<div>
+<div class="flex items-center justify-between pb-2 border-b border-[#f4f4f4]">
+<span class="font-mono text-[11px] uppercase text-on-surface-variant font-medium tracking-wider">Precio actual OMIE</span>
+
+
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 font-mono text-[11px] bg-[#defbe6] text-[#0e6027] font-semibold">
+<span class="material-symbols-outlined text-[13px]">trending_down</span>
+-25,2%
+</span>
+
+</div>
+<div class="mt-3 flex items-baseline gap-1.5">
+<span class="font-mono text-[34px] leading-[38px] text-on-surface font-semibold tracking-tight">116,16</span>
+<span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
+</div>
+</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">calendar_today</span>
+<span class="truncate">12/11 · vs media 90 días: 155,25 €/MWh</span>
+</div>
+</div>
+
+
+<div class="bg-white border border-[#e0e0e0] p-4 flex flex-col justify-between border-t-2 border-t-tertiary">
+<div>
+<div class="flex items-center justify-between pb-2 border-b border-[#f4f4f4]">
+<span class="font-mono text-[11px] uppercase text-on-surface-variant font-medium tracking-wider">MÍNIMO REGISTRADO (VALLE)</span>
+<span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[10px] bg-[#defbe6] text-[#0e6027] font-semibold">SOLAR / EÓLICO</span>
+</div>
+<div class="mt-3 flex items-baseline gap-1.5">
+<span class="font-mono text-[34px] leading-[38px] text-tertiary font-semibold tracking-tight">-10,00</span>
+<span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
+</div>
+
+<div class="mt-1 flex items-center gap-1.5 font-mono text-[13px] text-tertiary font-semibold">
+<span>0,019 €/kWh</span>
+<span class="text-on-surface-variant font-normal text-[11px]">P1 Valle total</span>
+</div>
+
+</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">wb_sunny</span>
+<span class="truncate">29/03 · 14:00 (Sobregeneración)</span>
+</div>
+</div>
+
+
+<div class="bg-white border border-[#e0e0e0] p-4 flex flex-col justify-between border-t-2 border-t-error">
+<div>
+<div class="flex items-center justify-between pb-2 border-b border-[#f4f4f4]">
+<span class="font-mono text-[11px] uppercase text-on-surface-variant font-medium tracking-wider">MÁXIMO REGISTRADO (PUNTA)</span>
+<span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[10px] bg-error-container text-error font-semibold">HORA PUNTA</span>
+</div>
+<div class="mt-3 flex items-baseline gap-1.5">
+<span class="font-mono text-[34px] leading-[38px] text-error font-semibold tracking-tight">380,00</span>
+<span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
+</div>
+
+<div class="mt-1 flex items-center gap-1.5 font-mono text-[13px] text-error font-semibold">
+<span>0,470 €/kWh</span>
+<span class="text-on-surface-variant font-normal text-[11px]">incl. peajes 2.0TD</span>
+</div>
+
+</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-error">local_fire_department</span>
+<span class="truncate">04/11 · 20:00 (Ola frío &#43; ciclo combinado)</span>
+</div>
+</div>
+
+<div class="bg-[#e0e0e0] border border-[#c6c6c6] p-4 flex flex-col justify-between border-t-2 border-t-on-surface">
+<div>
+<div class="flex items-center justify-between pb-2 border-b border-[#c6c6c6]">
+<span class="font-mono text-[11px] uppercase text-on-surface-variant font-medium tracking-wider">VEREDICTO ELEMETRIC</span>
+
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 font-mono text-[10px] bg-[#161616] text-white font-semibold">
+<span class="material-symbols-outlined text-[11px]">verified</span> NEUTRAL
+</span>
+
+</div>
+<div class="mt-2.5">
+<h2 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold">El mercado está caro y volátil: PVPC bien gestionado sigue ganando</h2>
+<p class="text-[12px] leading-[18px] text-on-surface-variant mt-1">Con una media de 155 €/MWh en los últimos 90 días (&#43;72,9% vs el periodo anterior), el precio medio del pool se ha disparado. Para un hogar tipo (270 kWh/mes), la factura PVPC estimada es de unos 56 €/mes. Aún no hay tarifas fijas suficientes en base para comparar: cuando aparezcan, recalcularemos el veredicto.</p>
+</div>
+</div>
+<div class="mt-4 pt-2 border-t border-[#c6c6c6] flex items-center justify-between">
+<span class="font-mono text-[11px] text-on-surface font-medium">PVPC estimado: 56 €/mes</span>
+<span class="material-symbols-outlined text-primary text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="w-full px-4 lg:px-8 py-2">
+
+
+
+
+
+
+<div class="max-w-[1440px] mx-auto bg-white border border-[#e0e0e0] p-5 flex flex-col gap-4">
+<h2 class="font-headline text-[20px] leading-[26px] text-on-surface font-semibold">Evolución de los precios</h2>
+
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-3 border-b border-[#e0e0e0]">
+
+<div class="flex flex-wrap items-center bg-[#f4f4f4] border border-[#e0e0e0] p-0.5">
+<button class="px-3 py-1.5 text-[12px] font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button" data-range="30">30 días</button>
+<button class="px-3 py-1.5 text-[12px] font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button" data-range="60">60 Días</button>
+<button class="px-3 py-1.5 text-[12px] font-semibold bg-white text-primary border border-[#e0e0e0] shadow-sm" type="button" data-range="90">90 Días</button>
+<button class="px-3 py-1.5 text-[12px] font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button" data-range="365">Histórico 1 Año</button>
+</div>
+
+<div class="flex flex-wrap items-center gap-2 font-mono text-[11px]">
+<div class="flex items-center gap-1.5 px-2.5 py-1 bg-[#f4f4f4] border border-[#e0e0e0] text-on-surface">
+<span class="w-3 h-0.5 bg-[#161616]"></span>
+<span>PVPC Regulado (2.0TD)</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 bg-[#f4f4f4] border border-[#e0e0e0] text-on-surface">
+<span class="w-2.5 h-2.5 bg-primary"></span>
+<span>Pool Mayorista OMIE</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 bg-[#f4f4f4] border border-[#e0e0e0] text-on-surface-variant">
+<span class="w-4 border-t-2 border-dashed border-tertiary"></span>
+<span>Top 5 Fijo Mercado Libre (— €/kWh)</span>
+</div>
+</div>
+</div>
+
+<div class="relative w-full overflow-hidden bg-white border border-[#e0e0e0] p-4">
+
+<div class="flex items-center justify-between font-mono text-[11px] text-on-surface-variant pb-2 border-b border-[#f4f4f4]">
+<div class="flex items-center gap-2">
+<span>Eje Primario: <strong class="text-on-surface font-semibold">€/MWh (OMIE)</strong></span>
+<span class="text-[#c6c6c6]">|</span>
+<span>Eje Secundario: <strong class="text-primary font-semibold">€/kWh (Factura Consumidor)</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface">Base de datos de liquidación REE oficial</span>
+</div>
+</div>
+
+<div id="omie-chart" data-report="/data/report_es.json"></div>
+</div>
+
+<div class="mt-4 pt-3 border-t border-[#e0e0e0] grid grid-cols-1 md:grid-cols-3 gap-3">
+<div class="flex items-start gap-2 bg-[#f4f4f4] p-3 border border-[#e0e0e0]">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">verified_user</span>
+<p class="text-[12px] leading-[18px] text-on-surface"><strong class="font-semibold text-on-surface">Fórmula PVPC:</strong> Incluye 25% indexación a futuros trimestrales según RD 445/2023.</p>
+</div>
+<div class="flex items-start gap-2 bg-[#f4f4f4] p-3 border border-[#e0e0e0]">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">energy_savings_leaf</span>
+<p class="text-[12px] leading-[18px] text-on-surface"><strong class="font-semibold text-on-surface">Días con precio Cero:</strong> 21 días en el periodo registraron horas a 0,00 €/MWh.</p>
+</div>
+<div class="flex items-start gap-2 bg-[#f4f4f4] p-3 border border-[#e0e0e0]">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">shield</span>
+<p class="text-[12px] leading-[18px] text-on-surface"><strong class="font-semibold text-on-surface">Peajes CNMC:</strong> Término de energía y cargos vigentes aplicados a cada hora.</p>
+</div>
+</div>
+</div>
+<script src="/js/chart.js" defer></script>
+</section>
+
+
+<section class="w-full px-4 lg:px-8 py-4" id="analisis-comparativo">
+
+
+
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5">
+
+<div class="bg-white border border-[#e0e0e0] p-4 flex flex-col gap-3.5 lg:col-span-7">
+<div class="flex items-center justify-between pb-2 border-b border-[#e0e0e0]">
+<span class="font-mono text-[11px] uppercase text-primary font-semibold tracking-wider">DESGLOSE REGULATORIO</span>
+<span class="inline-flex items-center px-2 py-0.5 font-mono text-[10px] bg-[#f4f4f4] border border-[#e0e0e0] text-on-surface-variant">Media 90 días</span>
+</div>
+<h2 class="font-headline text-[20px] leading-[26px] text-on-surface font-semibold -mt-1.5">Distribución por Franjas Horarias (Tarifa 2.0TD)</h2>
+<p class="text-[13px] leading-[20px] text-on-surface-variant -mt-1.5">Coste real consolidado del término de energía (peajes de transporte &#43; cargos &#43; energía mayorista) ponderado en cada tramo según el BOE.</p>
+
+
+
+<div class="flex items-center justify-between p-3 border-l-2 border-l-tertiary bg-white">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-[#defbe6] text-tertiary">
+<span class="material-symbols-outlined text-[18px]">nightlight</span>
+</span>
+<div>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold flex items-center gap-2">
+Tramo Valle (P3) <span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[9px] bg-[#defbe6] text-[#0e6027] font-bold uppercase">Más Económico</span>
+</h4>
+<span class="text-[12px] leading-[18px] text-on-surface-variant">Lunes a Viernes (00h-08h) &#43; Fines de semana &amp; Festivos completos</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-mono text-[16px] leading-[20px] text-tertiary font-semibold">0,217 <span class="text-[11px]">€/kWh</span></span>
+
+
+</div>
+</div>
+
+<div class="flex items-center justify-between p-3 border-l-2 border-l-primary bg-white">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-[#edf5ff] text-primary">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</span>
+<div>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold flex items-center gap-2">
+Tramo Llano (P2) <span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[9px] bg-[#edf5ff] text-primary font-bold uppercase">Intermedio</span>
+</h4>
+<span class="text-[12px] leading-[18px] text-on-surface-variant">Lunes a Viernes: 08h-10h, 14h-18h y 22h-24h</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-mono text-[16px] leading-[20px] text-primary font-semibold">0,199 <span class="text-[11px]">€/kWh</span></span>
+
+
+</div>
+</div>
+
+<div class="flex items-center justify-between p-3 border-l-2 border-l-error bg-white">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-error-container text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</span>
+<div>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold flex items-center gap-2">
+Tramo Punta (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[9px] bg-error-container text-error font-bold uppercase">Crítico Evitar</span>
+</h4>
+<span class="text-[12px] leading-[18px] text-on-surface-variant">Lunes a Viernes: 10h-14h y 18h-22h</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-mono text-[16px] leading-[20px] text-error font-semibold">0,208 <span class="text-[11px]">€/kWh</span></span>
+
+
+</div>
+</div>
+
+
+<div class="mt-1 p-3.5 bg-[#f4f4f4] border border-[#e0e0e0] flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">lightbulb</span>
+<p class="text-[13px] leading-[19px] text-on-surface"><strong class="font-semibold">Regla de oro:</strong> Una lavadora o termo eléctrico programado a las 07:00h en lugar de las 11:00h ahorra un <strong class="font-semibold text-tertiary">58%</strong> en el coste energético de ese ciclo.</p>
+</div>
+</div>
+
+
+
+<div class="bg-white border border-[#e0e0e0] p-4 flex flex-col gap-3.5 lg:col-span-5 h-full">
+<div class="flex items-center justify-between pb-2 border-b border-[#e0e0e0]">
+<span class="font-mono text-[11px] uppercase text-primary font-semibold tracking-wider">AUDITORÍA NEUTRAL DE MERCADO</span>
+<span class="inline-flex items-center px-2 py-0.5 font-mono text-[10px] bg-[#f4f4f4] border border-[#e0e0e0] text-on-surface-variant">Estimado</span>
+</div>
+<h2 class="font-headline text-[20px] leading-[26px] text-on-surface font-semibold -mt-1.5">¿Quién ha ganado en los últimos 90 días?</h2>
+<p class="text-[13px] leading-[20px] text-on-surface-variant -mt-1.5">Simulación normalizada para un hogar medio español (Potencia contratada: 3.45 kW punta / 3.45 kW valle; Consumo: 270 kWh/mes con desglose estándar 30% P1 / 25% P2 / 45% P3).</p>
+
+<div class="grid grid-cols-2 gap-3">
+
+<div class="p-3.5 bg-[#f4f4f4] border border-[#e0e0e0] flex flex-col justify-between">
+
+<div>
+<span class="font-mono text-[10px] uppercase text-on-surface-variant font-medium">PVPC 2.0TD</span>
+<h3 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold mt-1">PVPC Regulado</h3>
+<p class="text-[12px] leading-[16px] text-on-surface-variant mt-0.5">Indexado a Pool &#43; Futuros</p>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-mono text-[20px] leading-[24px] text-on-surface font-semibold">56 €</span>
+<span class="font-mono text-[10px] text-on-surface-variant">/mes medio</span>
+</div>
+<div class="mt-2 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-on-surface-variant font-medium">Total trimestre: 169 €</div>
+</div>
+
+<div class="p-3.5 bg-[#f4f4f4] border border-[#e0e0e0] flex flex-col justify-between">
+
+<div>
+<span class="font-mono text-[10px] uppercase text-on-surface-variant font-medium">TOP 5 FIJO MEDIO</span>
+<h3 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold mt-1">Mercado Libre</h3>
+<p class="text-[12px] leading-[16px] text-on-surface-variant mt-0.5">Tarifas precio fijo 24h</p>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<span class="font-mono text-[20px] leading-[24px] text-on-surface font-semibold">—</span>
+<span class="font-mono text-[10px] text-on-surface-variant">/mes medio</span>
+</div>
+<div class="mt-2 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-on-surface-variant font-medium">—</div>
+</div>
+</div>
+
+
+<div class="p-3.5 bg-[#f4f4f4] border border-[#e0e0e0] flex items-center justify-between">
+<span class="font-headline text-[14px] leading-[19px] text-on-surface font-semibold">—</span>
+</div>
+
+
+<p class="text-[11px] leading-[16px] text-on-surface-variant font-mono border-t border-[#e0e0e0] pt-2.5">* Cálculos auditados con IVA al 10% e Impuesto Especial sobre la Electricidad (IEE) según marco legal vigente.</p>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<section class="w-full px-4 lg:px-8 py-4">
+<div class="max-w-[1440px] mx-auto flex flex-col gap-4">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-2 pb-2 border-b border-[#e0e0e0]">
+<div>
+<span class="font-mono text-[11px] uppercase text-primary font-semibold tracking-wider">FACTORES CLAVE DE MERCADO</span>
+<h2 class="font-headline text-[24px] leading-[30px] text-on-surface font-semibold">¿Por qué osciló el mercado en estos 90 días?</h2>
+</div>
+<p class="text-[13px] leading-[20px] text-on-surface-variant max-w-md">El mix de generación renovable y el coste internacional del gas natural determinan el precio final de cada hora en el pool OMIE.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+
+
+
+
+<div class="bg-white border border-[#e0e0e0] flex flex-col">
+
+<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/air.svg')"></div>
+
+<div class="p-4 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-tertiary font-mono text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[15px]">air</span>
+<span>PRODUCCIÓN EÓLICA MÁXIMA</span>
+</div>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">El viento sigue hundiendo los precios de mediodía</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Los días con máxima generación eólica registran mínimos por debajo del coste marginal. El 23/08 el pool llegó a -2,10 €/MWh a mediodía: producir en esas horas (o no consumir) es la mayor palanca de ahorro.</p>
+</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-tertiary font-semibold">Impacto directo: -34% en horas nocturnas</div>
+</div>
+</div>
+
+
+<div class="bg-white border border-[#e0e0e0] flex flex-col">
+
+<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/local_fire_department.jpg')"></div>
+
+<div class="p-4 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-error font-mono text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[15px]">local_fire_department</span>
+<span>PICOS GAS MIBGAS</span>
+</div>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">Picos de hasta 380 €/MWh en punta eléctrica</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">El 04/11 el precio tocó los 380 €/MWh a las 20:00, con una media diaria de 257,55 €/MWh. En PVPC esa hora equivale a unos 0,47 €/kWh: evitar la lavadora y el horno en punta ahorra más que cualquier tarifa.</p>
+</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-error font-semibold">Impacto directo: picos hasta 0,47 €/kWh</div>
+</div>
+</div>
+
+
+<div class="bg-white border border-[#e0e0e0] flex flex-col">
+
+<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/bolt.svg')"></div>
+
+<div class="p-4 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-primary font-mono text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[15px]">bolt</span>
+<span>HORARIOS DE CONSUMO</span>
+</div>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">El tramo llano fue el más barato del trimestre</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Media PVPC por tramo en los últimos 90 días: valle 0,217 €/kWh, llano 0,199 €/kWh y punta 0,208 €/kWh. Desplazar consumo a llano (mañana tarde y final de tarde) es la optimización más fácil y rentable.</p>
+</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-primary font-semibold">Impacto directo: llano un 9% más barato que valle</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="w-full px-4 lg:px-8 py-4" id="consejos-ahorro">
+<div class="max-w-[1440px] mx-auto">
+<div class="bg-white border border-[#e0e0e0] p-4 flex flex-col gap-3.5">
+<div class="flex items-center justify-between pb-2 border-b border-[#e0e0e0]">
+<span class="font-mono text-[11px] uppercase text-primary font-semibold tracking-wider">GUÍA &amp; CONSEJOS DE AHORRO</span>
+<span class="inline-flex items-center px-2 py-0.5 font-mono text-[10px] bg-[#f4f4f4] border border-[#e0e0e0] text-on-surface-variant">ACCIONES SIN COSTE</span>
+</div>
+<h2 class="font-headline text-[20px] leading-[26px] text-on-surface font-semibold -mt-1.5">Cómo reducir tu factura de la luz</h2>
+<p class="text-[13px] leading-[20px] text-on-surface-variant -mt-1.5">Medidas concretas para pagar menos por el mismo consumo, aplicables a la tarifa 2.0TD.</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+
+<div class="p-3.5 border-l-2 border-l-primary bg-white flex flex-col gap-2">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-[#edf5ff] text-primary">
+<span class="material-symbols-outlined text-[18px]">nightlight</span>
+</span>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold">Desplaza el consumo al tramo valle</h4>
+<p class="text-[13px] leading-[20px] text-on-surface-variant">Programa lavadora, lavavajillas, termo eléctrico y carga del coche entre las 00h y las 08h de lunes a viernes, o cualquier hora del fin de semana. El tramo P3 es el más barato del día.</p>
+</div>
+
+<div class="p-3.5 border-l-2 border-l-primary bg-white flex flex-col gap-2">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-[#edf5ff] text-primary">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</span>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold">Evita la hora punta</h4>
+<p class="text-[13px] leading-[20px] text-on-surface-variant">Las franjas críticas son de 10h a 14h y de 18h a 22h en días laborables. No concentres ahí los electrodomésticos de mayor potencia.</p>
+</div>
+
+<div class="p-3.5 border-l-2 border-l-primary bg-white flex flex-col gap-2">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-[#edf5ff] text-primary">
+<span class="material-symbols-outlined text-[18px]">power</span>
+</span>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold">Revisa la potencia contratada</h4>
+<p class="text-[13px] leading-[20px] text-on-surface-variant">El término de potencia se paga aunque no consumas. Si tu vivienda no usa todos los kW contratados, bájala y ahorra cada mes sin tocar tus hábitos.</p>
+</div>
+
+<div class="p-3.5 border-l-2 border-l-primary bg-white flex flex-col gap-2">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-[#edf5ff] text-primary">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+</span>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold">Compara PVPC contra mercado libre</h4>
+<p class="text-[13px] leading-[20px] text-on-surface-variant">Una vez al año compara tu tarifa actual con las ofertas fijas del mercado libre para tu perfil de consumo real. El ganador cambia con el tiempo.</p>
+</div>
+
+<div class="p-3.5 border-l-2 border-l-primary bg-white flex flex-col gap-2">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-[#edf5ff] text-primary">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</span>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold">Reduce el consumo en standby</h4>
+<p class="text-[13px] leading-[20px] text-on-surface-variant">Televisores, routers y cargadores consumen incluso apagados. Desconéctalos o usa regletas con interruptor, y sustituye las bombillas incandescentes por LED.</p>
+</div>
+
+<div class="p-3.5 border-l-2 border-l-primary bg-white flex flex-col gap-2">
+<span class="w-8 h-8 flex items-center justify-center shrink-0 bg-[#edf5ff] text-primary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</span>
+<h4 class="font-headline text-[15px] leading-[20px] text-on-surface font-semibold">Audita tu factura</h4>
+<p class="text-[13px] leading-[20px] text-on-surface-variant">Comprueba CUPS, potencia y energía con la calculadora gratuita de Elemetric para detectar cargos que no deberías estar pagando.</p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="w-full px-4 lg:px-8 pt-4 pb-12">
+<div class="max-w-[1440px] mx-auto bg-[#161616] border border-[#393939] text-white p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 relative">
+<div class="max-w-2xl flex flex-col gap-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-[#262626] border border-[#393939] font-mono text-[10px] text-[#c6c6c6] uppercase tracking-wider w-fit">
+<span class="material-symbols-outlined text-[13px]">tune</span>
+SIMULACIÓN FORENSE INDIVIDUAL
+</div>
+<h2 class="font-headline text-[26px] md:text-[32px] leading-[32px] md:leading-[38px] text-white font-semibold tracking-tight">Comprueba tu caso particular con tus consumos reales</h2>
+<p class="text-[14px] leading-[22px] text-[#c6c6c6] mt-1">Las medias generales no reflejan tus hábitos exactos. Sube tu factura en PDF o introduce tus horas punta/llano/valle para auditar qué comercializadora te cobraría menos hoy mismo.</p>
+<div class="flex flex-wrap items-center gap-4 pt-2 font-mono text-[11px] text-[#8d8d8d]">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#a7f0ba]">check_circle</span>Sin llamadas comerciales</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#a7f0ba]">check_circle</span>Cálculo oficial con peajes 2.0TD</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#a7f0ba]">check_circle</span>100% Gratuito e Independiente</span>
+</div>
+</div>
+<div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3 w-full lg:w-auto">
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-primary hover:bg-[#0353e9] text-white font-medium text-[14px] transition-colors text-center" href="https://compare.elemetric.comtom.engineering">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+Abrir Calculadora de Factura
+</a>
+</div>
+</div>
+</section>
+
+
+</div></main>
+<footer class="w-full bg-[#161616] text-[#c6c6c6] border-t border-[#393939] py-8"><div class="w-full px-4 lg:px-8"><div class="max-w-[1440px] mx-auto"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 pb-8 border-b border-[#262626]"><div class="lg:col-span-4 flex flex-col gap-3"><div class="flex items-center gap-2">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+		<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+	</svg>
+    <span class="font-headline text-[16px] font-semibold tracking-tight text-white">Elemetric</span><span class="px-2 py-0.5 bg-[#262626] border border-[#393939] font-mono text-[10px] uppercase text-primary font-semibold">Independiente</span></div><p class="text-[12px] leading-[18px] text-[#8d8d8d] pr-4">Plataforma analítica y comparador neutral de tarifas de electricidad en el mercado español Peninsular, Baleares y Canarias. Auditamos facturas frente al peaje regulado 2.0TD y el pool mayorista con rigor analítico.</p><div class="flex items-center gap-1.5 font-mono text-[11px] text-[#8d8d8d]"><span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">verified</span>100% Sin Comisiones Ocultas de Comercializadoras</div></div><div class="lg:col-span-3 flex flex-col gap-2"><span class="font-mono text-[10px] uppercase tracking-wider text-[#8d8d8d]">MARCO REGULATORIO &amp; FUENTES</span><ul class="flex flex-col gap-1.5 text-[12px]"><li class="flex items-center gap-1.5 text-[#c6c6c6] hover:text-white"><span class="material-symbols-outlined text-[14px]">gavel</span><span>CNMC - Circular 3/2020 &amp; Peajes 2.0TD</span></li><li class="flex items-center gap-1.5 text-[#c6c6c6] hover:text-white"><span class="material-symbols-outlined text-[14px]">electric_bolt</span><span>REE e-sios - Datos Operador del Sistema</span></li><li class="flex items-center gap-1.5 text-[#c6c6c6] hover:text-white"><span class="material-symbols-outlined text-[14px]">query_stats</span><span>OMIE - Mercado Mayorista Ibérico (MIBEL)</span></li><li class="flex items-center gap-1.5 text-[#c6c6c6] hover:text-white"><span class="material-symbols-outlined text-[14px]">article</span><span>BOE - Orden TED/Cargos Eléctricos 2024-2025</span></li></ul></div><div class="lg:col-span-2 flex flex-col gap-2"><span class="font-mono text-[10px] uppercase tracking-wider text-[#8d8d8d]">NAVEGACIÓN</span><ul class="flex flex-col gap-1.5 text-[12px]"><a class="text-[#c6c6c6] hover:text-white transition-colors" data-path="precios-hoy-historico" href="#">Precios Hoy &amp; Horas</a><a class="text-[#c6c6c6] hover:text-white transition-colors" data-path="calculadora-de-factura" href="https://compare.elemetric.comtom.engineering">Calculador de Factura</a><a class="text-[#c6c6c6] hover:text-white transition-colors" data-path="tarifas-libres-vs-pvpc" href="#">Mercado Libre vs PVPC</a><a class="text-[#c6c6c6] hover:text-white transition-colors" data-path="guia-consejos-ahorro" href="#consejos-ahorro">Tramos Horarios Punta/Valle</a></ul></div><div class="lg:col-span-3 flex flex-col gap-2"><span class="font-mono text-[10px] uppercase tracking-wider text-[#8d8d8d]">SEGURIDAD Y CONFORMIDAD</span><p class="text-[12px] leading-[18px] text-[#8d8d8d]">Procesamiento de facturas y código CUPS bajo protocolo cifrado RGPD. Elemetric no comercializa datos de suministro a intermediarios energéticos.</p><div class="flex items-center gap-1.5 text-[#8d8d8d] font-mono text-[11px] pt-1"><span class="material-symbols-outlined text-[14px]">shield_lock</span><span>Cumplimiento RGPD &amp; LOPD-GDD</span></div></div></div><div class="pt-4 flex flex-col md:flex-row items-center justify-between gap-3 text-[#8d8d8d] text-[12px]"><div class="flex flex-wrap items-center gap-4"><span class="font-mono text-[11px]">© 2026 Elemetric</span><a class="hover:text-white" data-path="aviso-legal" href="#">Aviso Legal</a><a class="hover:text-white" data-path="politica-privacidad" href="#">Política de Privacidad</a><a class="hover:text-white" data-path="cookies" href="#">Cookies</a></div><span class="font-mono text-[10px] uppercase tracking-wider">TARIFA PEAJE 2.0TD · ESPAÑA PENINSULAR</span></div></div></div></footer>
+</body>
+</html>
