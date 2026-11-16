@@ -24,6 +24,10 @@
 	</svg>
 </div><span class="font-headline text-[16px] font-semibold text-white tracking-tight">Elemetric</span></a>
 
+
+
+<div class="hidden 2xl:flex items-center gap-2 px-2.5 py-1 bg-[#262626] border border-[#393939] font-mono text-[12px]"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary-fixed-dim"></span></span><span class="text-[#c6c6c6]">Pool PVPC:</span><span class="font-semibold text-white">0.246 €/kWh</span><span class="opacity-30">|</span><span class="text-[#c6c6c6]">OMIE:</span><span class="font-semibold text-white">186.04 €/MWh</span></div>
+
 </div><nav class="hidden xl:flex items-center gap-1"><a class="px-3 py-4 text-[13px] text-white font-semibold bg-[#262626] border-b-2 border-primary" data-path="precios-hoy-historico" href="#">Today&#39;s Prices &amp; History</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="calculadora-de-factura" href="https://compare.elemetric.comtom.engineering">Bill Calculator</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="tarifas-libres-vs-pvpc" href="#analisis-comparativo">Regulatory Breakdown &amp; Audit</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="guia-consejos-ahorro" href="#consejos-ahorro">Guide &amp; Saving Tips</a></nav><div class="flex items-center gap-3 shrink-0"><div class="flex items-center border border-[#393939] text-[11px] font-mono"><button class="px-2 py-1 bg-[#393939] text-white font-semibold" type="button">EN</button><a class="px-2 py-1 text-[#8d8d8d] hover:text-white transition-colors" href="/es/">ES</a></div></div></div></div></header>
 <main class="w-full pt-14 bg-[#f4f4f4] min-h-[calc(100vh-56px)]"><div class="flex flex-col w-full">
 
@@ -39,6 +43,15 @@
 <span class="text-outline-variant">/</span>
 <span class="text-on-surface-variant">PENINSULAR 2.0TD</span>
 </nav>
+
+
+
+<div class="flex items-center gap-2 bg-[#f4f4f4] border border-[#e0e0e0] px-3 py-1 text-[12px]">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-mono text-[11px] text-on-surface">OMIE / REE data: <strong class="text-primary font-semibold">16/11 20:27</strong></span>
+<span class="border-l border-[#e0e0e0] pl-2 font-mono text-[10px] text-on-surface-variant">BOE 2024/2025</span>
+</div>
+
 
 </div>
 
@@ -75,15 +88,21 @@ Simulate Bill
 <div class="flex items-center justify-between pb-2 border-b border-[#f4f4f4]">
 <span class="font-mono text-[11px] uppercase text-on-surface-variant font-medium tracking-wider">Current OMIE price</span>
 
+
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 font-mono text-[11px] bg-error-container text-error font-semibold">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+19.3%
+</span>
+
 </div>
 <div class="mt-3 flex items-baseline gap-1.5">
-<span class="font-mono text-[34px] leading-[38px] text-on-surface font-semibold tracking-tight">—</span>
+<span class="font-mono text-[34px] leading-[38px] text-on-surface font-semibold tracking-tight">186.04</span>
 <span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
 </div>
 </div>
 <div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
 <span class="material-symbols-outlined text-[15px] text-secondary">calendar_today</span>
-<span>—</span>
+<span class="truncate">13/11 · vs 90-day average: 155.94 €/MWh</span>
 </div>
 </div>
 
@@ -95,14 +114,19 @@ Simulate Bill
 <span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[10px] bg-[#defbe6] text-[#0e6027] font-semibold">SOLAR / WIND</span>
 </div>
 <div class="mt-3 flex items-baseline gap-1.5">
-<span class="font-mono text-[34px] leading-[38px] text-tertiary font-semibold tracking-tight">—</span>
+<span class="font-mono text-[34px] leading-[38px] text-tertiary font-semibold tracking-tight">-6.00</span>
 <span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
+</div>
+
+<div class="mt-1 flex items-center gap-1.5 font-mono text-[13px] text-tertiary font-semibold">
+<span>0.024 €/kWh</span>
+<span class="text-on-surface-variant font-normal text-[11px]">P1 full valley</span>
 </div>
 
 </div>
 <div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
 <span class="material-symbols-outlined text-[15px] text-tertiary">wb_sunny</span>
-<span>—</span>
+<span class="truncate">19/04 · 16:00 (Overgeneration)</span>
 </div>
 </div>
 
@@ -114,14 +138,19 @@ Simulate Bill
 <span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[10px] bg-error-container text-error font-semibold">PEAK HOUR</span>
 </div>
 <div class="mt-3 flex items-baseline gap-1.5">
-<span class="font-mono text-[34px] leading-[38px] text-error font-semibold tracking-tight">—</span>
+<span class="font-mono text-[34px] leading-[38px] text-error font-semibold tracking-tight">380.00</span>
 <span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
+</div>
+
+<div class="mt-1 flex items-center gap-1.5 font-mono text-[13px] text-error font-semibold">
+<span>0.470 €/kWh</span>
+<span class="text-on-surface-variant font-normal text-[11px]">incl. 2.0TD tolls</span>
 </div>
 
 </div>
 <div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
 <span class="material-symbols-outlined text-[15px] text-error">local_fire_department</span>
-<span>—</span>
+<span class="truncate">04/11 · 20:00 (Cold wave &#43; combined cycle)</span>
 </div>
 </div>
 
@@ -136,12 +165,12 @@ Simulate Bill
 
 </div>
 <div class="mt-2.5">
-<h2 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold">The market is expensive and volatile: a well-managed PVPC still wins</h2>
-<p class="text-[12px] leading-[18px] text-on-surface-variant mt-1">With a 90-day average of 155 €/MWh (&#43;72.9% vs the previous period), the pool price has surged. For a typical household (270 kWh/month), the estimated PVPC bill is around 56 €/month. There are not yet enough fixed tariffs in the database to compare against: once they appear, we will recompute the verdict.</p>
+<h2 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold">No fixed-tariff benchmark this period</h2>
+<p class="text-[12px] leading-[18px] text-on-surface-variant mt-1">There are no recent fixed (24h) tariffs in the database to compare against, so we cannot say whether PVPC or a flat tariff saves money right now. The estimated PVPC price for the period is 0.211 €/kWh. With gas-driven peaks of 380 €/MWh in November evening hours, anyone on a recent fixed tariff is probably saving; if you are on PVPC, shift consumption to the zero-price windows.</p>
 </div>
 </div>
 <div class="mt-4 pt-2 border-t border-[#c6c6c6] flex items-center justify-between">
-<span class="font-mono text-[11px] text-on-surface-variant">—</span>
+<span class="font-mono text-[11px] text-on-surface font-medium">Estimated PVPC: 57 €/month</span>
 <span class="material-symbols-outlined text-primary text-[18px]">arrow_forward</span>
 </div>
 </div>
@@ -208,7 +237,7 @@ Simulate Bill
 </div>
 <div class="flex items-start gap-2 bg-[#f4f4f4] p-3 border border-[#e0e0e0]">
 <span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">energy_savings_leaf</span>
-<p class="text-[12px] leading-[18px] text-on-surface"><strong class="font-semibold text-on-surface">Zero-price days:</strong> —</p>
+<p class="text-[12px] leading-[18px] text-on-surface"><strong class="font-semibold text-on-surface">Zero-price days:</strong> 21 days in the period recorded hours at 0.00 €/MWh.</p>
 </div>
 <div class="flex items-start gap-2 bg-[#f4f4f4] p-3 border border-[#e0e0e0]">
 <span class="material-symbols-outlined text-secondary text-[18px] shrink-0">shield</span>
@@ -249,7 +278,8 @@ Valley Band (P3) <span class="inline-flex items-center px-1.5 py-0.5 font-mono t
 </div>
 </div>
 <div class="text-right">
-<span class="block font-mono text-[16px] leading-[20px] text-on-surface-variant font-semibold">—</span>
+<span class="block font-mono text-[16px] leading-[20px] text-tertiary font-semibold">0.217 <span class="text-[11px]">€/kWh</span></span>
+
 
 </div>
 </div>
@@ -267,7 +297,8 @@ Shoulder Band (P2) <span class="inline-flex items-center px-1.5 py-0.5 font-mono
 </div>
 </div>
 <div class="text-right">
-<span class="block font-mono text-[16px] leading-[20px] text-on-surface-variant font-semibold">—</span>
+<span class="block font-mono text-[16px] leading-[20px] text-primary font-semibold">0.201 <span class="text-[11px]">€/kWh</span></span>
+
 
 </div>
 </div>
@@ -285,7 +316,8 @@ Peak Band (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono tex
 </div>
 </div>
 <div class="text-right">
-<span class="block font-mono text-[16px] leading-[20px] text-on-surface-variant font-semibold">—</span>
+<span class="block font-mono text-[16px] leading-[20px] text-error font-semibold">0.209 <span class="text-[11px]">€/kWh</span></span>
+
 
 </div>
 </div>
@@ -317,10 +349,10 @@ Peak Band (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono tex
 <p class="text-[12px] leading-[16px] text-on-surface-variant mt-0.5">Indexed to Pool &#43; Futures</p>
 </div>
 <div class="mt-3 flex items-baseline justify-between">
-<span class="font-mono text-[20px] leading-[24px] text-on-surface font-semibold">—</span>
+<span class="font-mono text-[20px] leading-[24px] text-on-surface font-semibold">57 €</span>
 <span class="font-mono text-[10px] text-on-surface-variant">/average month</span>
 </div>
-<div class="mt-2 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-on-surface-variant font-medium">—</div>
+<div class="mt-2 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-on-surface-variant font-medium">Quarter total: 170 €</div>
 </div>
 
 <div class="p-3.5 bg-[#f4f4f4] border border-[#e0e0e0] flex flex-col justify-between">
@@ -371,36 +403,36 @@ Peak Band (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono tex
 
 <div class="bg-white border border-[#e0e0e0] flex flex-col">
 
-<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/air.svg')"></div>
+<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/local_fire_department.jpg')"></div>
 
 <div class="p-4 flex-1 flex flex-col justify-between">
 <div>
 <div class="flex items-center gap-1.5 text-tertiary font-mono text-[11px] font-semibold">
-<span class="material-symbols-outlined text-[15px]">air</span>
-<span>PEAK WIND PRODUCTION</span>
+<span class="material-symbols-outlined text-[15px]">local_fire_department</span>
+<span>WINTER GAS SPIKES</span>
 </div>
-<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">Wind keeps driving midday prices down</h3>
-<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Days with maximum wind generation register lows below marginal cost. On 23/08 the pool hit -2.10 €/MWh at midday: producing in those hours (or not consuming) is the biggest savings lever.</p>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">Gas drives the evening peaks</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Heating demand pushes gas (MIBGAS) prices up exactly when electricity use peaks: the 18–22h slot in November keeps hitting new highs, with a 380 €/MWh spike on Nov 4 at 20:00.</p>
 </div>
-<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-tertiary font-semibold">Direct impact: -34% in evening hours</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-tertiary font-semibold">Direct impact: &#43;68% period average vs the previous quarter</div>
 </div>
 </div>
 
 
 <div class="bg-white border border-[#e0e0e0] flex flex-col">
 
-<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/local_fire_department.jpg')"></div>
+<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/air.svg')"></div>
 
 <div class="p-4 flex-1 flex flex-col justify-between">
 <div>
 <div class="flex items-center gap-1.5 text-error font-mono text-[11px] font-semibold">
-<span class="material-symbols-outlined text-[15px]">local_fire_department</span>
-<span>GAS SPIKES MIBGAS</span>
+<span class="material-symbols-outlined text-[15px]">air</span>
+<span>WIND: ZERO-PRICE DAYS</span>
 </div>
-<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">Spikes up to 380 €/MWh in peak electricity hours</h3>
-<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">On 04/11 the price peaked at 380 €/MWh at 20:00, with a daily average of 257.55 €/MWh. Under PVPC that hour costs about 0.47 €/kWh: skipping the washing machine and oven in peak hours saves more than any tariff.</p>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">21 days at zero or negative price</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Wind production pushed the pool price to 0 €/MWh (or below) on a quarter of the days in the period, even in late autumn. The cheapest day was Oct 18, averaging just 76.3 €/MWh.</p>
 </div>
-<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-error font-semibold">Direct impact: spikes up to 0.47 €/kWh</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-error font-semibold">Direct impact: up to -100% in windy slots</div>
 </div>
 </div>
 
@@ -413,12 +445,12 @@ Peak Band (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono tex
 <div>
 <div class="flex items-center gap-1.5 text-primary font-mono text-[11px] font-semibold">
 <span class="material-symbols-outlined text-[15px]">bolt</span>
-<span>CONSUMPTION TIMING</span>
+<span>OFF-PEAK NOT CHEAP</span>
 </div>
-<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">The mid-price band was the cheapest of the quarter</h3>
-<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Average PVPC price by band over the last 90 days: off-peak 0.217 €/kWh, mid-peak 0.199 €/kWh and peak 0.208 €/kWh. Shifting consumption to the mid-price band (late morning and end of afternoon) is the easiest and most profitable optimisation.</p>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">This time the night doesn&#39;t pay off</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Normally the off-peak (night) slot is the cheapest. This period it&#39;s the opposite: off-peak 0.217 €/kWh vs mid-peak 0.201 and peak 0.209. With nighttime heating demand and no solar output, charging your home or car &#39;at night&#39; no longer guarantees savings.</p>
 </div>
-<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-primary font-semibold">Direct impact: mid-peak 9% cheaper than off-peak</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-primary font-semibold">Direct impact: off-peak costs ~8% more than mid-peak this period</div>
 </div>
 </div>
 

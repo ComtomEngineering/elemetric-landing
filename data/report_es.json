@@ -1,53 +1,44 @@
 {
-  "generated_at": "2026-11-13T20:30:00Z",
-  "period_start": "2026-08-15",
-  "period_end": "2026-11-13",
+  "generated_at": "2026-11-16T21:35:00Z",
+  "period_start": "2026-08-18",
+  "period_end": "2026-11-16",
   "metric_notes": {
-    "avg": "Media de 90 días: 155,25 €/MWh. Sube un +72,9% frente al periodo anterior (89,78 €/MWh): el mercado se ha encarecido con fuerza en otoño.",
-    "min": "Mínimo histórico del periodo: -10 €/MWh el 29/03 a las 14:00. En los últimos 90 días, el día más barato es el 23/08 (media 85,10 €/MWh, con precio negativo a mediodía).",
-    "max": "Máximo del periodo: 380 €/MWh el 04/11 a las 20:00. El día más caro de los últimos 90 días fue ese mismo 04/11 (media 257,55 €/MWh)."
+    "avg": "Media de 90 días: 155,94 €/MWh. Sube un +68,1% frente al periodo anterior (92,77 €/MWh): tendencia alcista clara desde agosto (≈123 €/MWh semanales) hasta la semana del 2 de noviembre (222,4 €/MWh).",
+    "min": "Precio más bajo de la ventana: 0 €/MWh el 18/10 a las 11:00. 21 días con precios ≤ 0,001 €/MWh (~24% del periodo): la eólica sigue regalando energía incluso en invierno.",
+    "max": "Máximo absoluto: 380 €/MWh el 04/11 a las 20:00. El día más caro fue el 04/11, con media de 257,6 €/MWh."
   },
   "verdict": {
     "label": "NEUTRAL",
-    "title": "El mercado está caro y volátil: PVPC bien gestionado sigue ganando",
-    "body": "Con una media de 155 €/MWh en los últimos 90 días (+72,9% vs el periodo anterior), el precio medio del pool se ha disparado. Para un hogar tipo (270 kWh/mes), la factura PVPC estimada es de unos 56 €/mes. Aún no hay tarifas fijas suficientes en base para comparar: cuando aparezcan, recalcularemos el veredicto."
+    "title": "Sin tarifa fija de referencia este periodo",
+    "body": "No hay tarifas fijas (24h) recientes en base de datos para comparar, así que no podemos afirmar si PVPC o una tarifa plana ahorra ahora. La estimación PVPC del periodo es 0,211 €/kWh. Con picos de gas a 380 €/MWh en las horas punta de noviembre, quien tenga tarifa fija reciente probablemente esté ahorrando; si estás en PVPC, desplaza consumo a los huecos de precio cero."
   },
   "factors": [
     {
-      "tag": "PRODUCCIÓN EÓLICA MÁXIMA",
-      "icon": "air",
-      "title": "El viento sigue hundiendo los precios de mediodía",
-      "body": "Los días con máxima generación eólica registran mínimos por debajo del coste marginal. El 23/08 el pool llegó a -2,10 €/MWh a mediodía: producir en esas horas (o no consumir) es la mayor palanca de ahorro.",
-      "impact": "Impacto directo: -34% en horas nocturnas"
-    },
-    {
-      "tag": "PICOS GAS MIBGAS",
+      "tag": "PICOS DE GAS EN INVIERNO",
       "icon": "local_fire_department",
-      "title": "Picos de hasta 380 €/MWh en punta eléctrica",
-      "body": "El 04/11 el precio tocó los 380 €/MWh a las 20:00, con una media diaria de 257,55 €/MWh. En PVPC esa hora equivale a unos 0,47 €/kWh: evitar la lavadora y el horno en punta ahorra más que cualquier tarifa.",
-      "impact": "Impacto directo: picos hasta 0,47 €/kWh"
+      "title": "El gas dispara las horas punta",
+      "body": "La demanda de calefacción encarece el gas (MIBGAS) justo cuando más se consume electricidad: la franja 18–22h de noviembre marca máximos repetidos, con un pico de 380 €/MWh el 4 de noviembre a las 20:00.",
+      "impact": "Impacto directo: +68% en la media del periodo frente al trimestre anterior"
     },
     {
-      "tag": "HORARIOS DE CONSUMO",
+      "tag": "EÓLICA: DÍAS A CERO",
+      "icon": "air",
+      "title": "21 días con precio cero o negativo",
+      "body": "La producción eólica ha llevado el precio del pool a 0 €/MWh (o menos) en un cuarto de los días del periodo, incluso en otoño-invierno. El día más barato fue el 18/10, con media de solo 76,3 €/MWh.",
+      "impact": "Impacto directo: hasta -100% en las franjas con viento"
+    },
+    {
+      "tag": "VALLE NO ES BARATO",
       "icon": "bolt",
-      "title": "El tramo llano fue el más barato del trimestre",
-      "body": "Media PVPC por tramo en los últimos 90 días: valle 0,217 €/kWh, llano 0,199 €/kWh y punta 0,208 €/kWh. Desplazar consumo a llano (mañana tarde y final de tarde) es la optimización más fácil y rentable.",
-      "impact": "Impacto directo: llano un 9% más barato que valle"
+      "title": "Esta vez la noche no compensa",
+      "body": "Lo habitual es que el valle (noche) sea el tramo más barato. En este periodo pasa al revés: valle 0,217 €/kWh frente a llano 0,201 y punta 0,209. Con demanda nocturna de calefacción y poca producción solar, cargar la casa o el coche 'de noche' ya no garantiza ahorro.",
+      "impact": "Impacto directo: el valle cuesta ~8% más que el llano este periodo"
     }
   ],
-  "golden_rule": "Desplaza el consumo al tramo llano: fue el más barato del trimestre (0,20 €/kWh frente a 0,22 en valle).",
+  "golden_rule": "En invierno el mapa cambia: mira los días de viento (precio cero) en vez de la hora, y evita la franja 18–22h de noviembre a toda costa.",
   "annotations": [
-    {
-      "date": "2026-11-04",
-      "time": "20:00",
-      "text": "PICO MÁXIMO DEL PERIODO (380 €/MWh)",
-      "kind": "max"
-    },
-    {
-      "date": "2026-08-23",
-      "time": "12:00",
-      "text": "PRECIO NEGATIVO (-2,10 €/MWh)",
-      "kind": "min"
-    }
+    {"date": "2026-11-04", "time": "20:00", "text": "MÁXIMO DEL PERIODO (380 €/MWh)", "kind": "max"},
+    {"date": "2026-10-18", "time": "11:00", "text": "PRECIO CERO POR EÓLICA", "kind": "min"},
+    {"date": "2026-08-23", "time": "12:00", "text": "PRECIO NEGATIVO (-2,1 €/MWh)", "kind": "min"}
   ]
 }

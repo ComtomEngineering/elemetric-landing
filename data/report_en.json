@@ -1,53 +1,44 @@
 {
-  "generated_at": "2026-11-13T20:30:00Z",
-  "period_start": "2026-08-15",
-  "period_end": "2026-11-13",
+  "generated_at": "2026-11-16T21:35:00Z",
+  "period_start": "2026-08-18",
+  "period_end": "2026-11-16",
   "metric_notes": {
-    "avg": "90-day average: 155.25 €/MWh. Up +72.9% vs the previous period (89.78 €/MWh): the market has priced up sharply this autumn.",
-    "min": "Period low: -10 €/MWh on 29/03 at 14:00. In the last 90 days the cheapest day was 23/08 (avg 85.10 €/MWh, with a negative price at midday).",
-    "max": "Period high: 380 €/MWh on 04/11 at 20:00. The most expensive day of the last 90 was that same 04/11 (avg 257.55 €/MWh)."
+    "avg": "90-day average: 155.94 €/MWh. Up +68.1% vs the previous period (92.77 €/MWh): a clear upward trend from August (≈123 €/MWh weekly) to the week of Nov 2 (222.4 €/MWh).",
+    "min": "Lowest price in the window: 0 €/MWh on Oct 18 at 11:00. 21 days with prices ≤ 0.001 €/MWh (~24% of the period): wind keeps giving energy away even in winter.",
+    "max": "Absolute maximum: 380 €/MWh on Nov 4 at 20:00. The most expensive day was Nov 4, with an average of 257.6 €/MWh."
   },
   "verdict": {
     "label": "NEUTRAL",
-    "title": "The market is expensive and volatile: a well-managed PVPC still wins",
-    "body": "With a 90-day average of 155 €/MWh (+72.9% vs the previous period), the pool price has surged. For a typical household (270 kWh/month), the estimated PVPC bill is around 56 €/month. There are not yet enough fixed tariffs in the database to compare against: once they appear, we will recompute the verdict."
+    "title": "No fixed-tariff benchmark this period",
+    "body": "There are no recent fixed (24h) tariffs in the database to compare against, so we cannot say whether PVPC or a flat tariff saves money right now. The estimated PVPC price for the period is 0.211 €/kWh. With gas-driven peaks of 380 €/MWh in November evening hours, anyone on a recent fixed tariff is probably saving; if you are on PVPC, shift consumption to the zero-price windows."
   },
   "factors": [
     {
-      "tag": "PEAK WIND PRODUCTION",
-      "icon": "air",
-      "title": "Wind keeps driving midday prices down",
-      "body": "Days with maximum wind generation register lows below marginal cost. On 23/08 the pool hit -2.10 €/MWh at midday: producing in those hours (or not consuming) is the biggest savings lever.",
-      "impact": "Direct impact: -34% in evening hours"
-    },
-    {
-      "tag": "GAS SPIKES MIBGAS",
+      "tag": "WINTER GAS SPIKES",
       "icon": "local_fire_department",
-      "title": "Spikes up to 380 €/MWh in peak electricity hours",
-      "body": "On 04/11 the price peaked at 380 €/MWh at 20:00, with a daily average of 257.55 €/MWh. Under PVPC that hour costs about 0.47 €/kWh: skipping the washing machine and oven in peak hours saves more than any tariff.",
-      "impact": "Direct impact: spikes up to 0.47 €/kWh"
+      "title": "Gas drives the evening peaks",
+      "body": "Heating demand pushes gas (MIBGAS) prices up exactly when electricity use peaks: the 18–22h slot in November keeps hitting new highs, with a 380 €/MWh spike on Nov 4 at 20:00.",
+      "impact": "Direct impact: +68% period average vs the previous quarter"
     },
     {
-      "tag": "CONSUMPTION TIMING",
+      "tag": "WIND: ZERO-PRICE DAYS",
+      "icon": "air",
+      "title": "21 days at zero or negative price",
+      "body": "Wind production pushed the pool price to 0 €/MWh (or below) on a quarter of the days in the period, even in late autumn. The cheapest day was Oct 18, averaging just 76.3 €/MWh.",
+      "impact": "Direct impact: up to -100% in windy slots"
+    },
+    {
+      "tag": "OFF-PEAK NOT CHEAP",
       "icon": "bolt",
-      "title": "The mid-price band was the cheapest of the quarter",
-      "body": "Average PVPC price by band over the last 90 days: off-peak 0.217 €/kWh, mid-peak 0.199 €/kWh and peak 0.208 €/kWh. Shifting consumption to the mid-price band (late morning and end of afternoon) is the easiest and most profitable optimisation.",
-      "impact": "Direct impact: mid-peak 9% cheaper than off-peak"
+      "title": "This time the night doesn't pay off",
+      "body": "Normally the off-peak (night) slot is the cheapest. This period it's the opposite: off-peak 0.217 €/kWh vs mid-peak 0.201 and peak 0.209. With nighttime heating demand and no solar output, charging your home or car 'at night' no longer guarantees savings.",
+      "impact": "Direct impact: off-peak costs ~8% more than mid-peak this period"
     }
   ],
-  "golden_rule": "Shift consumption to the mid-price band: it was the cheapest of the quarter (0.20 €/kWh vs 0.22 in off-peak).",
+  "golden_rule": "In winter the map changes: chase windy zero-price days instead of a time slot, and avoid November's 18–22h window at all costs.",
   "annotations": [
-    {
-      "date": "2026-11-04",
-      "time": "20:00",
-      "text": "PERIOD PEAK (380 €/MWh)",
-      "kind": "max"
-    },
-    {
-      "date": "2026-08-23",
-      "time": "12:00",
-      "text": "NEGATIVE PRICE (-2.10 €/MWh)",
-      "kind": "min"
-    }
+    {"date": "2026-11-04", "time": "20:00", "text": "PERIOD MAX (380 €/MWh)", "kind": "max"},
+    {"date": "2026-10-18", "time": "11:00", "text": "ZERO PRICE FROM WIND", "kind": "min"},
+    {"date": "2026-08-23", "time": "12:00", "text": "NEGATIVE PRICE (-2.1 €/MWh)", "kind": "min"}
   ]
 }

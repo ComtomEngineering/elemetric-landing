@@ -24,6 +24,10 @@
 	</svg>
 </div><span class="font-headline text-[16px] font-semibold text-white tracking-tight">Elemetric</span></a>
 
+
+
+<div class="hidden 2xl:flex items-center gap-2 px-2.5 py-1 bg-[#262626] border border-[#393939] font-mono text-[12px]"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary-fixed-dim"></span></span><span class="text-[#c6c6c6]">Pool PVPC:</span><span class="font-semibold text-white">0,246 €/kWh</span><span class="opacity-30">|</span><span class="text-[#c6c6c6]">OMIE:</span><span class="font-semibold text-white">186,04 €/MWh</span></div>
+
 </div><nav class="hidden xl:flex items-center gap-1"><a class="px-3 py-4 text-[13px] text-white font-semibold bg-[#262626] border-b-2 border-primary" data-path="precios-hoy-historico" href="#">Evolucion de Precios</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="calculadora-de-factura" href="https://compare.elemetric.comtom.engineering">Calculadora de Factura</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="tarifas-libres-vs-pvpc" href="#analisis-comparativo">Desglose Regulatorio</a><a class="px-3 py-4 text-[13px] text-[#c6c6c6] hover:text-white hover:bg-[#262626] transition-colors border-b-2 border-transparent" data-path="guia-consejos-ahorro" href="#consejos-ahorro">Consejos de Ahorro</a></nav><div class="flex items-center gap-3 shrink-0"><div class="flex items-center border border-[#393939] text-[11px] font-mono"><button class="px-2 py-1 bg-[#393939] text-white font-semibold" type="button">ES</button><a class="px-2 py-1 text-[#8d8d8d] hover:text-white transition-colors" href="/en/">EN</a></div></div></div></div></header>
 <main class="w-full pt-14 bg-[#f4f4f4] min-h-[calc(100vh-56px)]"><div class="flex flex-col w-full">
 
@@ -39,6 +43,15 @@
 <span class="text-outline-variant">/</span>
 <span class="text-on-surface-variant">PENINSULAR 2.0TD</span>
 </nav>
+
+
+
+<div class="flex items-center gap-2 bg-[#f4f4f4] border border-[#e0e0e0] px-3 py-1 text-[12px]">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-mono text-[11px] text-on-surface">Datos OMIE / REE: <strong class="text-primary font-semibold">16/11 20:27</strong></span>
+<span class="border-l border-[#e0e0e0] pl-2 font-mono text-[10px] text-on-surface-variant">BOE 2024/2025</span>
+</div>
+
 
 </div>
 
@@ -75,15 +88,21 @@ Simular Factura
 <div class="flex items-center justify-between pb-2 border-b border-[#f4f4f4]">
 <span class="font-mono text-[11px] uppercase text-on-surface-variant font-medium tracking-wider">Precio actual OMIE</span>
 
+
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 font-mono text-[11px] bg-error-container text-error font-semibold">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+19,3%
+</span>
+
 </div>
 <div class="mt-3 flex items-baseline gap-1.5">
-<span class="font-mono text-[34px] leading-[38px] text-on-surface font-semibold tracking-tight">—</span>
+<span class="font-mono text-[34px] leading-[38px] text-on-surface font-semibold tracking-tight">186,04</span>
 <span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
 </div>
 </div>
 <div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
 <span class="material-symbols-outlined text-[15px] text-secondary">calendar_today</span>
-<span>—</span>
+<span class="truncate">13/11 · vs media 90 días: 155,94 €/MWh</span>
 </div>
 </div>
 
@@ -95,14 +114,19 @@ Simular Factura
 <span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[10px] bg-[#defbe6] text-[#0e6027] font-semibold">SOLAR / EÓLICO</span>
 </div>
 <div class="mt-3 flex items-baseline gap-1.5">
-<span class="font-mono text-[34px] leading-[38px] text-tertiary font-semibold tracking-tight">—</span>
+<span class="font-mono text-[34px] leading-[38px] text-tertiary font-semibold tracking-tight">-6,00</span>
 <span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
+</div>
+
+<div class="mt-1 flex items-center gap-1.5 font-mono text-[13px] text-tertiary font-semibold">
+<span>0,024 €/kWh</span>
+<span class="text-on-surface-variant font-normal text-[11px]">P1 Valle total</span>
 </div>
 
 </div>
 <div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
 <span class="material-symbols-outlined text-[15px] text-tertiary">wb_sunny</span>
-<span>—</span>
+<span class="truncate">19/04 · 16:00 (Sobregeneración)</span>
 </div>
 </div>
 
@@ -114,14 +138,19 @@ Simular Factura
 <span class="inline-flex items-center px-1.5 py-0.5 font-mono text-[10px] bg-error-container text-error font-semibold">HORA PUNTA</span>
 </div>
 <div class="mt-3 flex items-baseline gap-1.5">
-<span class="font-mono text-[34px] leading-[38px] text-error font-semibold tracking-tight">—</span>
+<span class="font-mono text-[34px] leading-[38px] text-error font-semibold tracking-tight">380,00</span>
 <span class="font-mono text-[14px] text-on-surface-variant">€/MWh</span>
+</div>
+
+<div class="mt-1 flex items-center gap-1.5 font-mono text-[13px] text-error font-semibold">
+<span>0,470 €/kWh</span>
+<span class="text-on-surface-variant font-normal text-[11px]">incl. peajes 2.0TD</span>
 </div>
 
 </div>
 <div class="mt-4 pt-2 border-t border-[#e0e0e0] text-on-surface-variant font-mono text-[11px] flex items-center gap-1.5">
 <span class="material-symbols-outlined text-[15px] text-error">local_fire_department</span>
-<span>—</span>
+<span class="truncate">04/11 · 20:00 (Ola frío &#43; ciclo combinado)</span>
 </div>
 </div>
 
@@ -136,12 +165,12 @@ Simular Factura
 
 </div>
 <div class="mt-2.5">
-<h2 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold">El mercado está caro y volátil: PVPC bien gestionado sigue ganando</h2>
-<p class="text-[12px] leading-[18px] text-on-surface-variant mt-1">Con una media de 155 €/MWh en los últimos 90 días (&#43;72,9% vs el periodo anterior), el precio medio del pool se ha disparado. Para un hogar tipo (270 kWh/mes), la factura PVPC estimada es de unos 56 €/mes. Aún no hay tarifas fijas suficientes en base para comparar: cuando aparezcan, recalcularemos el veredicto.</p>
+<h2 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold">Sin tarifa fija de referencia este periodo</h2>
+<p class="text-[12px] leading-[18px] text-on-surface-variant mt-1">No hay tarifas fijas (24h) recientes en base de datos para comparar, así que no podemos afirmar si PVPC o una tarifa plana ahorra ahora. La estimación PVPC del periodo es 0,211 €/kWh. Con picos de gas a 380 €/MWh en las horas punta de noviembre, quien tenga tarifa fija reciente probablemente esté ahorrando; si estás en PVPC, desplaza consumo a los huecos de precio cero.</p>
 </div>
 </div>
 <div class="mt-4 pt-2 border-t border-[#c6c6c6] flex items-center justify-between">
-<span class="font-mono text-[11px] text-on-surface-variant">—</span>
+<span class="font-mono text-[11px] text-on-surface font-medium">PVPC estimado: 57 €/mes</span>
 <span class="material-symbols-outlined text-primary text-[18px]">arrow_forward</span>
 </div>
 </div>
@@ -208,7 +237,7 @@ Simular Factura
 </div>
 <div class="flex items-start gap-2 bg-[#f4f4f4] p-3 border border-[#e0e0e0]">
 <span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">energy_savings_leaf</span>
-<p class="text-[12px] leading-[18px] text-on-surface"><strong class="font-semibold text-on-surface">Días con precio Cero:</strong> —</p>
+<p class="text-[12px] leading-[18px] text-on-surface"><strong class="font-semibold text-on-surface">Días con precio Cero:</strong> 21 días en el periodo registraron horas a 0,00 €/MWh.</p>
 </div>
 <div class="flex items-start gap-2 bg-[#f4f4f4] p-3 border border-[#e0e0e0]">
 <span class="material-symbols-outlined text-secondary text-[18px] shrink-0">shield</span>
@@ -249,7 +278,8 @@ Tramo Valle (P3) <span class="inline-flex items-center px-1.5 py-0.5 font-mono t
 </div>
 </div>
 <div class="text-right">
-<span class="block font-mono text-[16px] leading-[20px] text-on-surface-variant font-semibold">—</span>
+<span class="block font-mono text-[16px] leading-[20px] text-tertiary font-semibold">0,217 <span class="text-[11px]">€/kWh</span></span>
+
 
 </div>
 </div>
@@ -267,7 +297,8 @@ Tramo Llano (P2) <span class="inline-flex items-center px-1.5 py-0.5 font-mono t
 </div>
 </div>
 <div class="text-right">
-<span class="block font-mono text-[16px] leading-[20px] text-on-surface-variant font-semibold">—</span>
+<span class="block font-mono text-[16px] leading-[20px] text-primary font-semibold">0,201 <span class="text-[11px]">€/kWh</span></span>
+
 
 </div>
 </div>
@@ -285,7 +316,8 @@ Tramo Punta (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono t
 </div>
 </div>
 <div class="text-right">
-<span class="block font-mono text-[16px] leading-[20px] text-on-surface-variant font-semibold">—</span>
+<span class="block font-mono text-[16px] leading-[20px] text-error font-semibold">0,209 <span class="text-[11px]">€/kWh</span></span>
+
 
 </div>
 </div>
@@ -317,10 +349,10 @@ Tramo Punta (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono t
 <p class="text-[12px] leading-[16px] text-on-surface-variant mt-0.5">Indexado a Pool &#43; Futuros</p>
 </div>
 <div class="mt-3 flex items-baseline justify-between">
-<span class="font-mono text-[20px] leading-[24px] text-on-surface font-semibold">—</span>
+<span class="font-mono text-[20px] leading-[24px] text-on-surface font-semibold">57 €</span>
 <span class="font-mono text-[10px] text-on-surface-variant">/mes medio</span>
 </div>
-<div class="mt-2 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-on-surface-variant font-medium">—</div>
+<div class="mt-2 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-on-surface-variant font-medium">Total trimestre: 170 €</div>
 </div>
 
 <div class="p-3.5 bg-[#f4f4f4] border border-[#e0e0e0] flex flex-col justify-between">
@@ -371,36 +403,36 @@ Tramo Punta (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono t
 
 <div class="bg-white border border-[#e0e0e0] flex flex-col">
 
-<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/air.svg')"></div>
+<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/local_fire_department.jpg')"></div>
 
 <div class="p-4 flex-1 flex flex-col justify-between">
 <div>
 <div class="flex items-center gap-1.5 text-tertiary font-mono text-[11px] font-semibold">
-<span class="material-symbols-outlined text-[15px]">air</span>
-<span>PRODUCCIÓN EÓLICA MÁXIMA</span>
+<span class="material-symbols-outlined text-[15px]">local_fire_department</span>
+<span>PICOS DE GAS EN INVIERNO</span>
 </div>
-<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">El viento sigue hundiendo los precios de mediodía</h3>
-<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Los días con máxima generación eólica registran mínimos por debajo del coste marginal. El 23/08 el pool llegó a -2,10 €/MWh a mediodía: producir en esas horas (o no consumir) es la mayor palanca de ahorro.</p>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">El gas dispara las horas punta</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">La demanda de calefacción encarece el gas (MIBGAS) justo cuando más se consume electricidad: la franja 18–22h de noviembre marca máximos repetidos, con un pico de 380 €/MWh el 4 de noviembre a las 20:00.</p>
 </div>
-<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-tertiary font-semibold">Impacto directo: -34% en horas nocturnas</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-tertiary font-semibold">Impacto directo: &#43;68% en la media del periodo frente al trimestre anterior</div>
 </div>
 </div>
 
 
 <div class="bg-white border border-[#e0e0e0] flex flex-col">
 
-<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/local_fire_department.jpg')"></div>
+<div class="w-full h-44 border-b border-[#e0e0e0] bg-cover bg-center" style="background-image: url('/img/factors/air.svg')"></div>
 
 <div class="p-4 flex-1 flex flex-col justify-between">
 <div>
 <div class="flex items-center gap-1.5 text-error font-mono text-[11px] font-semibold">
-<span class="material-symbols-outlined text-[15px]">local_fire_department</span>
-<span>PICOS GAS MIBGAS</span>
+<span class="material-symbols-outlined text-[15px]">air</span>
+<span>EÓLICA: DÍAS A CERO</span>
 </div>
-<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">Picos de hasta 380 €/MWh en punta eléctrica</h3>
-<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">El 04/11 el precio tocó los 380 €/MWh a las 20:00, con una media diaria de 257,55 €/MWh. En PVPC esa hora equivale a unos 0,47 €/kWh: evitar la lavadora y el horno en punta ahorra más que cualquier tarifa.</p>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">21 días con precio cero o negativo</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">La producción eólica ha llevado el precio del pool a 0 €/MWh (o menos) en un cuarto de los días del periodo, incluso en otoño-invierno. El día más barato fue el 18/10, con media de solo 76,3 €/MWh.</p>
 </div>
-<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-error font-semibold">Impacto directo: picos hasta 0,47 €/kWh</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-error font-semibold">Impacto directo: hasta -100% en las franjas con viento</div>
 </div>
 </div>
 
@@ -413,12 +445,12 @@ Tramo Punta (P1) <span class="inline-flex items-center px-1.5 py-0.5 font-mono t
 <div>
 <div class="flex items-center gap-1.5 text-primary font-mono text-[11px] font-semibold">
 <span class="material-symbols-outlined text-[15px]">bolt</span>
-<span>HORARIOS DE CONSUMO</span>
+<span>VALLE NO ES BARATO</span>
 </div>
-<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">El tramo llano fue el más barato del trimestre</h3>
-<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Media PVPC por tramo en los últimos 90 días: valle 0,217 €/kWh, llano 0,199 €/kWh y punta 0,208 €/kWh. Desplazar consumo a llano (mañana tarde y final de tarde) es la optimización más fácil y rentable.</p>
+<h3 class="font-headline text-[16px] leading-[22px] text-on-surface font-semibold mt-1.5">Esta vez la noche no compensa</h3>
+<p class="text-[13px] leading-[19px] text-on-surface-variant mt-1.5">Lo habitual es que el valle (noche) sea el tramo más barato. En este periodo pasa al revés: valle 0,217 €/kWh frente a llano 0,201 y punta 0,209. Con demanda nocturna de calefacción y poca producción solar, cargar la casa o el coche &#39;de noche&#39; ya no garantiza ahorro.</p>
 </div>
-<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-primary font-semibold">Impacto directo: llano un 9% más barato que valle</div>
+<div class="mt-4 pt-2 border-t border-[#e0e0e0] font-mono text-[11px] text-primary font-semibold">Impacto directo: el valle cuesta ~8% más que el llano este periodo</div>
 </div>
 </div>
 
