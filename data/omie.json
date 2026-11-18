@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T20:59:16Z",
+  "updated_at": "2026-11-18T09:54:01Z",
   "system": "ES",
   "days": [
     {
@@ -1954,6 +1954,15 @@
       "min_time": "11:00",
       "max_time": "18:00",
       "energy_gwh": 8771.51
+    },
+    {
+      "date": "2026-11-16",
+      "avg_mwh": 132.55,
+      "min_mwh": 56.91,
+      "max_mwh": 209.99,
+      "min_time": "04:00",
+      "max_time": "20:00",
+      "energy_gwh": 12724.99
     }
   ]
 }
