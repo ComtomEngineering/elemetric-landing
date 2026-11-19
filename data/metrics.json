@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-18T13:47:25Z",
+  "generated_at": "2026-11-19T14:17:02Z",
   "period_days": 90,
-  "period_start": "2026-08-20",
-  "period_end": "2026-11-18",
-  "avg_90d_mwh": 155.29,
-  "prev_period_avg_mwh": 94.76,
-  "delta_pct": 63.9,
+  "period_start": "2026-08-21",
+  "period_end": "2026-11-19",
+  "avg_90d_mwh": 154.72,
+  "prev_period_avg_mwh": 95.62,
+  "delta_pct": 61.8,
   "pvpc": {
-    "avg_90d_kwh": 0.211,
+    "avg_90d_kwh": 0.21,
     "tou": {
-      "valle_kwh": 0.215,
+      "valle_kwh": 0.214,
       "llano_kwh": 0.202,
-      "punta_kwh": 0.21
+      "punta_kwh": 0.209
     },
     "zero_price_days": 21
   },
@@ -36,7 +36,7 @@
     "split_p1": 0.3,
     "split_p2": 0.25,
     "split_p3": 0.45,
-    "pvpc_month_eur": 56.48,
+    "pvpc_month_eur": 56.37,
     "fixed_month_eur": null,
     "savings_eur": null,
     "savings_pct": null
