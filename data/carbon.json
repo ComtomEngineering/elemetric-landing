@@ -1,10 +1,27 @@
 {
-  "updated_at": "2026-11-23T15:51:28Z",
+  "updated_at": "2026-11-24T15:41:50Z",
   "system": "ES",
   "summary": {
-    "latest_gco2": null,
-    "avg_30d_gco2": null,
-    "month_household_kg": null
+    "latest_gco2": 132.2,
+    "latest_datetime": "2026-11-23T23:00:00+01:00",
+    "avg_30d_gco2": 96.6,
+    "month_household_kg": 26.1,
+    "cleanest_day": {
+      "date": "2026-11-23",
+      "avg_gco2": 96.6
+    },
+    "dirtiest_day": {
+      "date": "2026-11-23",
+      "avg_gco2": 96.6
+    }
   },
-  "days": []
+  "days": [
+    {
+      "date": "2026-11-23",
+      "avg_gco2": 96.6,
+      "min_gco2": 32.5,
+      "max_gco2": 160,
+      "hours": 24
+    }
+  ]
 }
