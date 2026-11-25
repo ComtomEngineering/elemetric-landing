@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-24T18:00:43Z",
+  "updated_at": "2026-11-25T15:26:44Z",
   "system": "ES",
   "summary": {
-    "latest_gco2": 132.2,
-    "latest_datetime": "2026-11-23T23:00:00+01:00",
-    "avg_30d_gco2": 91.3,
-    "month_household_kg": 24.7,
+    "latest_gco2": 62.8,
+    "latest_datetime": "2026-11-24T23:00:00+01:00",
+    "avg_30d_gco2": 92.3,
+    "month_household_kg": 24.9,
     "cleanest_day": {
       "date": "2026-11-18",
       "avg_gco2": 32.5,
@@ -18,13 +18,6 @@
     }
   },
   "days": [
-    {
-      "date": "2025-11-24",
-      "avg_gco2": 66.1,
-      "min_gco2": 54,
-      "max_gco2": 88.6,
-      "hours": 24
-    },
     {
       "date": "2025-11-25",
       "avg_gco2": 72,
@@ -2795,6 +2788,14 @@
       "avg_gco2": 96.6,
       "min_gco2": 32.5,
       "max_gco2": 160,
+      "hours": 24,
+      "omie_kwh": 0.2056
+    },
+    {
+      "date": "2026-11-24",
+      "avg_gco2": 91.3,
+      "min_gco2": 62.5,
+      "max_gco2": 121.5,
       "hours": 24
     }
   ]

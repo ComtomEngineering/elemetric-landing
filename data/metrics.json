@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-24T18:00:43Z",
+  "generated_at": "2026-11-25T15:26:44Z",
   "period_days": 90,
-  "period_start": "2026-08-26",
-  "period_end": "2026-11-24",
-  "avg_90d_mwh": 153.95,
-  "prev_period_avg_mwh": 98.3,
-  "delta_pct": 56.6,
+  "period_start": "2026-08-27",
+  "period_end": "2026-11-25",
+  "avg_90d_mwh": 155.05,
+  "prev_period_avg_mwh": 98.65,
+  "delta_pct": 57.2,
   "pvpc": {
-    "avg_90d_kwh": 0.209,
+    "avg_90d_kwh": 0.21,
     "tou": {
       "valle_kwh": 0.211,
-      "llano_kwh": 0.202,
-      "punta_kwh": 0.211
+      "llano_kwh": 0.205,
+      "punta_kwh": 0.213
     },
     "zero_price_days": 21
   },
@@ -36,10 +36,10 @@
     "split_p1": 0.3,
     "split_p2": 0.25,
     "split_p3": 0.45,
-    "pvpc_month_eur": 56.36,
+    "pvpc_month_eur": 56.85,
     "fixed_month_eur": 28.62,
-    "savings_eur": -83.21,
-    "savings_pct": -96.9
+    "savings_eur": -84.7,
+    "savings_pct": -98.6
   },
   "verdict": "FIJA"
 }
