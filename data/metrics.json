@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-25T15:26:44Z",
+  "generated_at": "2026-11-26T14:57:26Z",
   "period_days": 90,
-  "period_start": "2026-08-27",
-  "period_end": "2026-11-25",
-  "avg_90d_mwh": 155.05,
-  "prev_period_avg_mwh": 98.65,
-  "delta_pct": 57.2,
+  "period_start": "2026-08-28",
+  "period_end": "2026-11-26",
+  "avg_90d_mwh": 156.29,
+  "prev_period_avg_mwh": 99.11,
+  "delta_pct": 57.7,
   "pvpc": {
-    "avg_90d_kwh": 0.21,
+    "avg_90d_kwh": 0.212,
     "tou": {
-      "valle_kwh": 0.211,
-      "llano_kwh": 0.205,
-      "punta_kwh": 0.213
+      "valle_kwh": 0.212,
+      "llano_kwh": 0.207,
+      "punta_kwh": 0.216
     },
-    "zero_price_days": 21
+    "zero_price_days": 20
   },
   "min": {
     "mwh": -6,
@@ -28,7 +28,7 @@
     "time": "20:00"
   },
   "fixed_benchmark": {
-    "kwh": 0.106,
+    "kwh": 0.105,
     "n_tariffs": 5
   },
   "bill_comparison": {
@@ -36,10 +36,10 @@
     "split_p1": 0.3,
     "split_p2": 0.25,
     "split_p3": 0.45,
-    "pvpc_month_eur": 56.85,
-    "fixed_month_eur": 28.62,
-    "savings_eur": -84.7,
-    "savings_pct": -98.6
+    "pvpc_month_eur": 57.38,
+    "fixed_month_eur": 28.35,
+    "savings_eur": -87.1,
+    "savings_pct": -102.4
   },
   "verdict": "FIJA"
 }
